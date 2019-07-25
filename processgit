@@ -423,7 +423,7 @@ class ProcessGIT
                             }
                         }
                     } else {
-                        fwrite(STDERR, "$reval\n");
+                        //fwrite(STDERR, "$reval\n");
                     }
                 } else {
                     // echo "$val skip\n";
