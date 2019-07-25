@@ -398,7 +398,7 @@ class ProcessGIT
                 if(!in_array($ext, $this->skipExt))
                 {
                     // echo "$val not skip\n";
-                    $cmd = "git blame --show-email $val";
+                    $cmd = "git blame --show-email $val 2>&1";
                     // echo $cmd, PHP_EOL;
                     // fwrite(STDERR, "$cmd\n");
                     // $reval = exec($cmd, $data);
