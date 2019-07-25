@@ -183,7 +183,8 @@ class ProcessGIT
         // $lines = file($fileName);
 
         // $reval = exec("git log --full-history --date-order --date=short", $lines);
-        $reval = exec("git log --date=short  --pretty='%ae|%ad|%h|%s'", $lines);
+        // $reval = exec("git log --date=short  --pretty='%ae|%ad|%h|%s'", $lines);
+        $reval = exec('git log --date=short  --pretty="%ae|%ad|%h|%s"', $lines);
         // print_r($lines);
 
         if($this->isUTF8)
